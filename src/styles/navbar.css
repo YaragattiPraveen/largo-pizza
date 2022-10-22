@@ -1,0 +1,87 @@
+.Navbar_container{
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    /* position: fixed; */
+}
+.Navbar{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+    flex-wrap: wrap;
+}
+.Navbar .logo img{
+    height: 50px;
+    width: 50px;
+}
+
+.Navbar_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    list-style-type: none;
+    position: relative;
+    transition: .6s all ease-in-out;
+}
+.Navbar .Navbar_menu .nav_item{
+    color: #ffffff;
+    padding: 0 25px;
+    font-size: 1.6rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .6s ease-in-out;
+}
+.Navbar .Navbar_menu .nav_item:hover{
+    color: rgb(6, 252, 170);
+    scale: 1.3;
+}
+.mobile_menu{
+    display: none;
+    transition: .6s all ease-in-out;
+}
+
+
+@media screen and (max-width:768px) {
+    .mobile_menu{
+        display: block;
+        cursor: pointer;
+        transition: .6s all ease-in-out;
+    }
+   .Navbar_menu{
+        flex-direction: column;
+        background-color: rgb(8, 0, 0);
+        position: absolute;
+        top: -600px;
+        left: 0;
+        width: 100%;
+        margin: 70px 0 20px 0;
+        padding: 0 0 30px 0;
+        align-items: flex-start;
+        z-index: 99;
+        transition: .6s all ease-in-out;
+    }
+    .menu_active{
+        top: 0;
+        transition: .6s all ease-in-out;
+    }
+    .Navbar{
+        padding: 1rem 2rem;
+    }
+    .Navbar .logo img{
+        height: 40px;
+        width: 40px;
+    }
+    .Navbar .Navbar_menu .nav_item{
+        width: 95%;
+        padding: 10px 0;
+        margin: 0 auto;
+        border-bottom: 1px solid #ffffff50;
+    }
+    .Navbar .Navbar_menu .nav_item:hover{
+        color: rgb(6, 252, 170);
+        scale: 1.04;
+    }
+}

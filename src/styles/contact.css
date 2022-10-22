@@ -1,0 +1,154 @@
+.contact {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact h1 {
+    text-align: center;
+    margin: 30px auto;
+    color: rgb(2, 93, 109);
+}
+
+.contact_details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1px;
+    margin: 40px auto;
+}
+
+.contact_details_card {
+    padding: 8px 10px;
+    height: 150px;
+    width: 300px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.contact_details_card p {
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+    color: rgb(119, 119, 119);
+    letter-spacing: .1rem;
+    font-weight: bold;
+    font-weight: 500;
+}
+
+.form_container {
+    margin: 20px auto 80px auto;
+}
+
+.form_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+
+.form_label {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form_label label {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin: 5px 0;
+    color: grey;
+}
+
+.form_label input {
+    width: 100%;
+    padding: 10px 10px;
+    border: 2px solid rgba(128, 128, 128, 0.418);
+    outline: none;
+}
+
+.form_label_textarea textarea {
+    width: 100%;
+    border: 2px solid rgba(128, 128, 128, 0.418);
+}
+
+.form_label_textarea {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form_label_textarea label {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin: 5px 0;
+    color: gray;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+form button {
+    padding: 10px;
+    width: 200px;
+    background-color: teal;
+    text-align: center;
+    margin: 50px auto 20px auto;
+    color: #ffffff;
+    font-size: 1.8rem;
+    border: 2px solid teal;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .6s ease-in-out all;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+form button:hover {
+    background-color: transparent;
+    color: teal;
+}
+
+@media screen and (max-width:768px) {
+    .contact_details {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form_row {
+        flex-direction: column;
+    }
+
+    .form_label label {
+        font-size: 1.4rem;
+    }
+
+    .form_label input {
+        width: 100%;
+        padding: 7px;
+    }
+
+    .form_label_textarea label {
+        font-size: 1.4rem;
+    }
+
+    .contact_details_card {
+        padding: 8px 10px;
+        height: 150px;
+        width: 290px;
+    }
+}

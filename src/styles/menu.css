@@ -1,0 +1,71 @@
+.menu_section{
+    width:100%;
+    height: auto;
+    background-color: rgb(163, 162, 162);
+    padding: 20px 0;
+}
+.menu{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.menu h1{
+    color: rgb(2, 93, 109);
+}
+.card_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    width: 300px;
+    height: auto;
+    transition: all .6s ease-in-out;
+    background-color: rgb(255, 255, 255);
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.card img{
+    width: 295px;
+    height: 240px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all .6s ease-in-out;
+}
+.card:hover img{
+    scale: 1.03;
+    padding: 5px;
+}
+.card h2{
+    padding: 10px 1px;
+    color: rgb(140, 207, 15);
+}
+.card h3{
+    margin-bottom: 15px;
+    text-align: left;
+    color: #02444d;
+}
+.card button{
+    width: 95%;
+    padding: 5px 8px;
+    margin: 10px 0;
+    background-color: rgb(3, 77, 54);
+    border: 2px solid rgb(3, 77, 54);
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .6s all ease-in-out;
+}
+.card button:hover{
+    background-color: transparent;
+    color: rgb(3, 77, 54);
+}
